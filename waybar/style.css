@@ -77,7 +77,6 @@ window#waybar.chromium {
 #disk,
 #temperature,
 #backlight,
-#network,
 #pulseaudio,
 #tray,
 #mode,
@@ -162,14 +161,6 @@ label:focus {
 
 #backlight {
     background-color: #90b1b1;
-}
-
-#network {
-    background-color: #2980b9;
-}
-
-#network.disconnected {
-    background-color: #f53c3c;
 }
 
 #pulseaudio {

@@ -4,7 +4,7 @@
     "layer": "top",
     "margin": "0px 0px 0px 0px",
     "position": "left",
-    "modules-right": ["network", "custom/bluetooth", "pulseaudio", "clock", "backlight", "battery", "memory", "cpu", "disk", "temperature", "tray"],
+    "modules-right": ["custom/bluetooth", "pulseaudio", "clock", "backlight", "battery", "memory", "cpu", "disk", "temperature", "tray"],
     "modules-left": ["wlr/taskbar"],
     "battery": {
         "format": "{capacity}",
@@ -42,25 +42,6 @@
         "format": "{icon}",
         "format-icons": [""],
         "on-click": "blueberry"
-    },
-    "network": {
-        "format": "{icon}",
-        "format-alt": "{icon}",
-        "format-icons": {
-            "wifi": ["﬉"],
-            "ethernet": [""],
-            "disconnected": [""]
-        },   
-        "format-alt-click": "click-right",
-        "format-wifi": "﬉",
-        "format-ethernet": "",
-        "format-disconnected": "", 
-        "tooltip-format": "{ifname} via {gwaddr}",
-        "tooltip-format-wifi": "{essid} {signalStrength}% ﬉",
-        "tooltip-format-ethernet": "{ifname} {ipaddr} ",
-        "tooltip-format-disconnected": "Disconnected",
-        "on-click": "nm-connection-editor",
-        "tooltip": true
     },
     "backlight": {
         /* "device": "intel_backlight", */

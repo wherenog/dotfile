@@ -20,8 +20,6 @@ let mapleader = "\<space>"
 " remember where you edit when you last leave
 autocmd BufReadPost * normal! g`"
 
-noremap ; :
-
 noremap j gj
 noremap k gk
 
@@ -63,6 +61,10 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'tpope/vim-commentary'
 Plug 'arcticicestudio/nord-vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'ZSaberLv0/ZFVimIM'
+Plug 'ZSaberLv0/ZFVimJob'
+Plug 'qdzhang/ZFVimIM_xiaohe'
+" Plug 'idxuanjun/bx_vimim_dict'
 call plug#end()
 
 " commentary comment and uncomment
@@ -86,8 +88,8 @@ set background=dark
 " Available values: 'hard', 'medium'(default), 'soft'
 let g:gruvbox_material_background = 'medium'
 " colorscheme nord
-" colorscheme gruvbox-material
-colorscheme shades_of_purple
+colorscheme gruvbox-material
+" colorscheme shades_of_purple
 " colorscheme gruvbox
 
 " lightline config
@@ -97,8 +99,8 @@ set showtabline=2
 " lightline
 let g:lightline = {}
 " let g:lightline.colorscheme = 'nord'
-" let g:lightline.colorscheme = 'gruvbox_material'
-let g:lightline.colorscheme = 'shades_of_purple'
+let g:lightline.colorscheme = 'gruvbox_material'
+" let g:lightline.colorscheme = 'shades_of_purple'
 
 " coc config
 " Use tab for trigger completion with characters ahead and navigate.
