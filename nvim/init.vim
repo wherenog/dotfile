@@ -64,6 +64,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'ZSaberLv0/ZFVimIM'
 Plug 'ZSaberLv0/ZFVimJob'
 Plug 'qdzhang/ZFVimIM_xiaohe'
+Plug 'lukas-reineke/indent-blankline.nvim'
 " Plug 'idxuanjun/bx_vimim_dict'
 call plug#end()
 
