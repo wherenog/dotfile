@@ -4,6 +4,7 @@ return require('packer').startup(function()
     "ellisonleao/gruvbox.nvim",
     requires = {"rktjmp/lush.nvim"}
   }
+  use "lifepillar/vim-gruvbox8"
   -- treesitter
   use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
   -- lualine status line

@@ -1,6 +1,6 @@
 -- leader key 为空格
-vim.g.mapleader = " "
-vim.g.maplocalleader = " "
+vim.g.mapleader = "<Space>"
+vim.g.maplocalleader = "<Space>"
 
 -- 本地变量
 local pluginKeys = {}
@@ -12,7 +12,11 @@ local opt = {
 
 map("n", "S", ":w<CR>", opt)
 map("n", "Q", ":q<CR>", opt)
-map("n", "<leader>sl", ":tabe<CR>", opt)
+map("n", "<C-l>", ":tabe<CR>", opt)
+map("n", "<C-j>", ":set splitright<CR>:vsplit<CR>", opt)
+
+map("n", "E", ":-tabnext<CR>", opt)
+map("n", "R", ":+tabnext<CR>", opt)
 
 -- nvim-cmp 自动补全
 pluginKeys.cmp = function(cmp)
@@ -20,7 +24,7 @@ pluginKeys.cmp = function(cmp)
     -- 上一个
     ['<C-k>'] = cmp.mapping.select_prev_item(),
     -- 下一个
-    ['<C-j>'] = cmp.mapping.select_next_item(),
+    ['<TAB>'] = cmp.mapping.select_next_item(),
     -- 出现补全
     ['<A-.>'] = cmp.mapping(cmp.mapping.complete(), { 'i', 'c' }),
     -- 取消

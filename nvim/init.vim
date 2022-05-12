@@ -15,6 +15,6 @@ lua require('lsp/setup')
 lua require('lsp/nvim-cmp')
 
 set background=dark
-colorscheme gruvbox
+colorscheme gruvbox8
 
 hi clear signcolumn

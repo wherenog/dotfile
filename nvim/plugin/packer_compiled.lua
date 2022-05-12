@@ -159,6 +159,11 @@ _G.packer_plugins = {
     path = "/home/hanzi/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
+  ["vim-gruvbox8"] = {
+    loaded = true,
+    path = "/home/hanzi/.local/share/nvim/site/pack/packer/start/vim-gruvbox8",
+    url = "https://github.com/lifepillar/vim-gruvbox8"
+  },
   ["vim-vsnip"] = {
     loaded = true,
     path = "/home/hanzi/.local/share/nvim/site/pack/packer/start/vim-vsnip",
