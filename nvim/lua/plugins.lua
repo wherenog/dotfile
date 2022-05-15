@@ -5,6 +5,10 @@ return require('packer').startup(function()
     requires = {"rktjmp/lush.nvim"}
   }
   use "lifepillar/vim-gruvbox8"
+
+  use "rebelot/kanagawa.nvim"
+
+  use "tpope/vim-commentary"
   -- treesitter
   use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
   -- lualine status line
