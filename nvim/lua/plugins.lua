@@ -8,7 +8,28 @@ return require('packer').startup(function()
 
   use "rebelot/kanagawa.nvim"
 
-  use "tpope/vim-commentary"
+  use "terrortylor/nvim-comment"
+
+  use {
+    "ray-x/lsp_signature.nvim",
+  }
+
+  use {
+    'lewis6991/gitsigns.nvim',
+    config = function()
+      require('gitsigns').setup()
+    end
+  }
+
+  use {
+    "norcalli/nvim-colorizer.lua",
+    config = function ()
+      require('colorizer').setup();
+    end
+  }
+
+  use 'jiangmiao/auto-pairs'
+
   -- treesitter
   use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
   -- lualine status line

@@ -1,6 +1,6 @@
 -- leader key 为空格
-vim.g.mapleader = "<Space>"
-vim.g.maplocalleader = "<Space>"
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
 
 -- 本地变量
 local pluginKeys = {}
@@ -12,8 +12,8 @@ local opt = {
 
 map("n", "S", ":w<CR>", opt)
 map("n", "Q", ":q<CR>", opt)
-map("n", "<C-l>", ":tabe<CR>", opt)
-map("n", "<C-j>", ":set splitright<CR>:vsplit<CR>", opt)
+map("n", "<leader>al<leader>", ":tabe<CR>", opt)
+map("n", "<leader>sl<leader>", ":set splitright<CR>:vsplit<CR>", opt)
 
 map("n", "E", ":-tabnext<CR>", opt)
 map("n", "R", ":+tabnext<CR>", opt)
