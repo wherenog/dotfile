@@ -8,6 +8,11 @@ return require('packer').startup(function()
 
   use "rebelot/kanagawa.nvim"
 
+  use {
+    'nvim-telescope/telescope.nvim',
+    requires = { {'nvim-lua/plenary.nvim'} }
+  }
+
   use "terrortylor/nvim-comment"
 
   use {

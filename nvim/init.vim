@@ -12,6 +12,7 @@ lua require('plugin-config/bufferline')
 lua require('plugin-config/indent')
 lua require('plugin-config/signature')
 lua require('plugin-config/comment')
+lua require('plugin-config/telescope')
 
 lua require('lsp/setup')
 lua require('lsp/nvim-cmp')
