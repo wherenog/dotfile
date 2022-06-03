@@ -18,7 +18,7 @@ lua require('lsp/setup')
 lua require('lsp/nvim-cmp')
 
 set background=dark
-colorscheme kanagawa
+colorscheme melange
 
 hi clear signcolumn
 

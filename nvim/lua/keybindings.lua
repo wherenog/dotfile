@@ -15,8 +15,8 @@ map("n", "Q", ":bdelete<CR>", opt)
 map("n", "<leader>al<leader>", ":tabe<CR>", opt)
 map("n", "<leader>sl<leader>", ":set splitright<CR>:vsplit<CR>", opt)
 
-map("n", "E", ":-tabnext<CR>", opt)
-map("n", "R", ":+tabnext<CR>", opt)
+map("n", "E", ":BufferLineCyclePrev<CR>", opt)
+map("n", "R", ":BufferLineCycleNext<CR>", opt)
 
 map("n", "<leader>ff<leader>", ":Telescope find_files<CR>", opt)
 -- nvim-cmp 自动补全

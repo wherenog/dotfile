@@ -8,6 +8,13 @@ return require('packer').startup(function()
 
   use "rebelot/kanagawa.nvim"
 
+  use "savq/melange"
+
+  use({
+    "catppuccin/nvim",
+    as = "catppuccin"
+  })
+
   use {
     'nvim-telescope/telescope.nvim',
     requires = { {'nvim-lua/plenary.nvim'} }

@@ -150,6 +150,11 @@ _G.packer_plugins = {
     path = "/home/hanzi/.local/share/nvim/site/pack/packer/start/lush.nvim",
     url = "https://github.com/rktjmp/lush.nvim"
   },
+  melange = {
+    loaded = true,
+    path = "/home/hanzi/.local/share/nvim/site/pack/packer/start/melange",
+    url = "https://github.com/savq/melange"
+  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "/home/hanzi/.local/share/nvim/site/pack/packer/start/nvim-cmp",
@@ -195,11 +200,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/hanzi/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
-  },
-  ["telescope-file-browser.nvim"] = {
-    loaded = true,
-    path = "/home/hanzi/.local/share/nvim/site/pack/packer/start/telescope-file-browser.nvim",
-    url = "https://github.com/nvim-telescope/telescope-file-browser.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,
