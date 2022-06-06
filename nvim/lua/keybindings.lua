@@ -15,10 +15,20 @@ map("n", "Q", ":bdelete<CR>", opt)
 map("n", "<leader>al<leader>", ":tabe<CR>", opt)
 map("n", "<leader>sl<leader>", ":set splitright<CR>:vsplit<CR>", opt)
 
+map("n", "<leader>h", "<C-w>h", opt)
+map("n", "<leader>j", "<C-w>j", opt)
+map("n", "<leader>k", "<C-w>k", opt)
+map("n", "<leader>l", "<C-w>l", opt)
+
 map("n", "E", ":BufferLineCyclePrev<CR>", opt)
 map("n", "R", ":BufferLineCycleNext<CR>", opt)
 
 map("n", "<leader>ff<leader>", ":Telescope find_files<CR>", opt)
+
+map("n", "<C-n>", ":NvimTreeToggle<CR>", opt)
+
+map("n", "<C-\\>", ":ToggleTerm size=40 dir=./ direction=vertical<CR>", opt)
+
 -- nvim-cmp 自动补全
 pluginKeys.cmp = function(cmp)
   return {

@@ -13,6 +13,8 @@ lua require('plugin-config/indent')
 lua require('plugin-config/signature')
 lua require('plugin-config/comment')
 lua require('plugin-config/telescope')
+lua require('plugin-config/nvimtree')
+lua require('plugin-config/toggleterm')
 
 lua require('lsp/setup')
 lua require('lsp/nvim-cmp')
