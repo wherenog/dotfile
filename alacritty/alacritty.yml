@@ -14,9 +14,9 @@ font:
     #
     # Default:
     #   - (macOS) Menlo
-    #   - (Linux/BSD) inconsolatalgc nerd font mono
+    #   - (Linux/BSD) mononoki nerd font mono
     #   - (Windows) Consolas
-    family: inconsolatalgc nerd font mono
+    family: mononoki nerd font mono
 
     # The `style` can be specified to pick a specific face.
     style: Regular
@@ -27,7 +27,7 @@ font:
     #
     # If the bold family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: inconsolatalgc nerd font mono
+    family: mononoki nerd font mono
 
     # The `style` can be specified to pick a specific face.
     style: Bold
@@ -38,7 +38,7 @@ font:
     #
     # If the italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: inconsolatalgc nerd font mono
+    family: mononoki nerd font mono
 
     # The `style` can be specified to pick a specific face.
     #style: Italic
@@ -49,47 +49,81 @@ font:
     #
     # If the bold italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: inconsolatalgc nerd font mono
+    family: mononoki nerd font mono
 
     # The `style` can be specified to pick a specific face.
     style: Bold Italic
 
   # Point size
-  size: 14.0
+  size: 20.0
 
-# Colors
-colors:
-    # Default colors
-    primary:
-        background: '#282828'
-        foreground: '#e2d3ba'
+# Colors gruvbox
+# colors:
+#     # Default colors
+#     primary:
+#         background: '#282828'
+#         foreground: '#e2d3ba'
+# 
+#     # Colors the cursor will use if `custom_cursor_colors` is true
+#     cursor:
+#         text: '#282828'
+#         cursor: '#e2d3ba'
+# 
+#     # Normal colors
+#     normal:
+#         black: '#1d2021'
+#         red: '#cc241d'
+#         green: '#98971a'
+#         yellow: '#d79921'
+#         blue: '#458588'
+#         magenta: '#b16286'
+#         cyan: '#689d6a'
+#         white: '#a89984'
+# 
+#     # Bright colors
+#     bright:
+#         black: '#928374'
+#         red: '#fb4934'
+#         green: '#b8bb26'
+#         yellow: '#fabd2f'
+#         blue: '#83a598'
+#         magenta: '#d3869b'
+#         cyan: '#8ec07c'
+#         white: '#ebdbb2'
 
-    # Colors the cursor will use if `custom_cursor_colors` is true
-    cursor:
-        text: '#282828'
-        cursor: '#e2d3ba'
-
-    # Normal colors
-    normal:
-        black: '#1d2021'
-        red: '#cc241d'
-        green: '#98971a'
-        yellow: '#d79921'
-        blue: '#458588'
-        magenta: '#b16286'
-        cyan: '#689d6a'
-        white: '#a89984'
-
-    # Bright colors
-    bright:
-        black: '#928374'
-        red: '#fb4934'
-        green: '#b8bb26'
-        yellow: '#fabd2f'
-        blue: '#83a598'
-        magenta: '#d3869b'
-        cyan: '#8ec07c'
-        white: '#ebdbb2'
+# Kanagawa Alacritty Colors
+#colors:
+#  primary:
+#    background: '0x1f1f28'
+#    foreground: '0xdcd7ba'
+#
+#  normal:
+#    black:   '0x090618'
+#    red:     '0xc34043'
+#    green:   '0x76946a'
+#    yellow:  '0xc0a36e'
+#    blue:    '0x7e9cd8'
+#    magenta: '0x957fb8'
+#    cyan:    '0x6a9589'
+#    white:   '0xc8c093'
+#
+#  bright:
+#    black:   '0x727169'
+#    red:     '0xe82424'
+#    green:   '0x98bb6c'
+#    yellow:  '0xe6c384'
+#    blue:    '0x7fb4ca'
+#    magenta: '0x938aa9'
+#    cyan:    '0x7aa89f'
+#    white:   '0xdcd7ba'
+#
+#  selection:
+#    background: '0x2d4f67'
+#    foreground: '0xc8c093'
+#
+#  indexed_colors:
+#    - { index: 16, color: '0xffa066' }
+#    - { index: 17, color: '0xff5d62' }
 
 window:
     padding:
@@ -97,4 +131,139 @@ window:
         y: 10
     opacity: 0.95
 
+schemes:
+  gruvbox_material_hard_dark: &gruvbox_material_hard_dark
+    primary:
+      background: '0x1d2021'
+      foreground: '0xd4be98'
+    normal:
+      black:   '0x32302f'
+      red:     '0xea6962'
+      green:   '0xa9b665'
+      yellow:  '0xd8a657'
+      blue:    '0x7daea3'
+      magenta: '0xd3869b'
+      cyan:    '0x89b482'
+      white:   '0xd4be98'
+    bright:
+      black:   '0x32302f'
+      red:     '0xea6962'
+      green:   '0xa9b665'
+      yellow:  '0xd8a657'
+      blue:    '0x7daea3'
+      magenta: '0xd3869b'
+      cyan:    '0x89b482'
+      white:   '0xd4be98'
+  gruvbox_material_medium_dark: &gruvbox_material_medium_dark
+    primary:
+      background: '0x282828'
+      foreground: '0xd4be98'
+    normal:
+      black:   '0x3c3836'
+      red:     '0xea6962'
+      green:   '0xa9b665'
+      yellow:  '0xd8a657'
+      blue:    '0x7daea3'
+      magenta: '0xd3869b'
+      cyan:    '0x89b482'
+      white:   '0xd4be98'
+    bright:
+      black:   '0x3c3836'
+      red:     '0xea6962'
+      green:   '0xa9b665'
+      yellow:  '0xd8a657'
+      blue:    '0x7daea3'
+      magenta: '0xd3869b'
+      cyan:    '0x89b482'
+      white:   '0xd4be98'
+  gruvbox_material_soft_dark: &gruvbox_material_soft_dark
+    primary:
+      background: '0x32302f'
+      foreground: '0xd4be98'
+    normal:
+      black:   '0x45403d'
+      red:     '0xea6962'
+      green:   '0xa9b665'
+      yellow:  '0xd8a657'
+      blue:    '0x7daea3'
+      magenta: '0xd3869b'
+      cyan:    '0x89b482'
+      white:   '0xd4be98'
+    bright:
+      black:   '0x45403d'
+      red:     '0xea6962'
+      green:   '0xa9b665'
+      yellow:  '0xd8a657'
+      blue:    '0x7daea3'
+      magenta: '0xd3869b'
+      cyan:    '0x89b482'
+      white:   '0xd4be98'
+  gruvbox_material_hard_light: &gruvbox_material_hard_light
+    primary:
+      background: '0xf9f5d7'
+      foreground: '0x654735'
+    normal:
+      black:   '0x654735'
+      red:     '0xc14a4a'
+      green:   '0x6c782e'
+      yellow:  '0xb47109'
+      blue:    '0x45707a'
+      magenta: '0x945e80'
+      cyan:    '0x4c7a5d'
+      white:   '0xf2e5bc'
+    bright:
+      black:   '0x654735'
+      red:     '0xc14a4a'
+      green:   '0x6c782e'
+      yellow:  '0xb47109'
+      blue:    '0x45707a'
+      magenta: '0x945e80'
+      cyan:    '0x4c7a5d'
+      white:   '0xf2e5bc'
+  gruvbox_material_medium_light: &gruvbox_material_medium_light
+    primary:
+      background: '0xfbf1c7'
+      foreground: '0x654735'
+    normal:
+      black:   '0x654735'
+      red:     '0xc14a4a'
+      green:   '0x6c782e'
+      yellow:  '0xb47109'
+      blue:    '0x45707a'
+      magenta: '0x945e80'
+      cyan:    '0x4c7a5d'
+      white:   '0xeee0b7'
+    bright:
+      black:   '0x654735'
+      red:     '0xc14a4a'
+      green:   '0x6c782e'
+      yellow:  '0xb47109'
+      blue:    '0x45707a'
+      magenta: '0x945e80'
+      cyan:    '0x4c7a5d'
+      white:   '0xeee0b7'
+  gruvbox_material_soft_light: &gruvbox_material_soft_light
+    primary:
+      background: '0xf2e5bc'
+      foreground: '0x654735'
+    normal:
+      black:   '0x654735'
+      red:     '0xc14a4a'
+      green:   '0x6c782e'
+      yellow:  '0xb47109'
+      blue:    '0x45707a'
+      magenta: '0x945e80'
+      cyan:    '0x4c7a5d'
+      white:   '0xe6d5ae'
+    bright:
+      black:   '0x654735'
+      red:     '0xc14a4a'
+      green:   '0x6c782e'
+      yellow:  '0xb47109'
+      blue:    '0x45707a'
+      magenta: '0x945e80'
+      cyan:    '0x4c7a5d'
+      white:   '0xe6d5ae'
 
+# Apply the color scheme.
+colors: *gruvbox_material_hard_dark
