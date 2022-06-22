@@ -29,6 +29,7 @@ map("n", "<C-n>", ":NvimTreeToggle<CR>", opt)
 
 map("n", "<C-\\>", ":ToggleTerm size=40 dir=./ direction=vertical<CR>", opt)
 
+
 -- nvim-cmp 自动补全
 pluginKeys.cmp = function(cmp)
   return {

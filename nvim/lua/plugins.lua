@@ -10,7 +10,6 @@ return require('packer').startup(function()
 
   use "savq/melange"
 
-
   use {
     'kyazdani42/nvim-tree.lua',
     requires = {
