@@ -7,7 +7,7 @@ setopt interactive_comments
 # History in cache directory:
 HISTSIZE=10000000
 SAVEHIST=10000000
-HISTFILE="${XDG_CACHE_HOME:-$HOME/.cache}/zsh/history"
+HISTFILE="$HOME/.zsh_history"
 
 # Load aliases and shortcuts if existent.
 [ -f "${XDG_CONFIG_HOME:-$HOME/.config}/shell/aliasrc" ] && source "${XDG_CONFIG_HOME:-$HOME/.config}/shell/aliasrc"
@@ -25,9 +25,9 @@ export KEYTIMEOUT=1
 
 # Use vim keys in tab complete menu:
 bindkey -M menuselect 'h' vi-backward-char
-bindkey -M menuselect 'k' vi-up-line-or-history
+bindkey -M vicmd 'k' history-substring-search-up
 bindkey -M menuselect 'l' vi-forward-char
-bindkey -M menuselect 'j' vi-down-line-or-history
+bindkey -M vicmd 'j' history-substring-search-down
 bindkey -v '^?' backward-delete-char
 
 # git information
@@ -50,7 +50,7 @@ function zle-keymap-select () {
         viins|main) echo -ne '\e[5 q';VI_MODE="%{$fg[green]%}I";; # beam
         *) echo -ne '\e[5 q';VI_MODE="%{$fg[green]%}I";; # beam
     esac
-    PS1="%B%{$fg[magenta]%}[$VI_MODE%{$fg[magenta]%}] %{$fg[yellow]%}%1~%{$fg[red]%}${vcs_info_msg_0_}%{$fg[green]%}%(?..$fg[red] [%?]) $ %b"
+    PS1="%B%{$fg[magenta]%}[$VI_MODE%{$fg[magenta]%}] %{$fg[blue]%}%1~%{$fg[red]%}${vcs_info_msg_0_}%{$fg[green]%}%(?..$fg[red] [%?]) $ %b"
     zle reset-prompt
 }
 zle -N zle-keymap-select
@@ -65,3 +65,4 @@ preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
 # Load syntax highlighting; should be last.
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh 2>/dev/null
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh 2>/dev/null
+source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
