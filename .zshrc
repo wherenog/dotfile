@@ -1,3 +1,4 @@
+source ~/.zprofile
 # Enable colors and change prompt:
 autoload -U colors && colors	# Load colors
 setopt autocd		# Automatically cd into typed directory.
@@ -40,8 +41,8 @@ zstyle ':vcs_info:*' check-for-changes true
 zstyle ':vcs_info:*' unstagedstr ' *'
 zstyle ':vcs_info:*' stagedstr ' +'
 # Set the format of the Git information for vcs_info
-zstyle ':vcs_info:git:*' formats       ' (%b%u%c)'
-zstyle ':vcs_info:git:*' actionformats ' (%b|%a%u%c)'
+# zstyle ':vcs_info:git:*' formats       ' (%b%u%c)'
+# zstyle ':vcs_info:git:*' actionformats ' (%b|%a%u%c)'
 
 # Change cursor shape for different vi modes.
 function zle-keymap-select () {

@@ -2,7 +2,7 @@
 
 alias \
   e="clear" \
-  r="ranger" \
+  r="lf" \
   lz="lazygit" \
 
 fd ()
