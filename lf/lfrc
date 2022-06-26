@@ -1,4 +1,4 @@
-set ratios 2:3:5
+set ratios 1:3:4
 # Note on Image Previews
 # For those wanting image previews, like this system, there are four steps to
 # set it up. These are done automatically for LARBS users, but I will state
@@ -14,6 +14,7 @@ set ratios 2:3:5
 #    called directly instead of normal lf.
 
 # Basic vars
+set info size:time
 set shellopts '-eu'
 set ifs "\n"
 set scrolloff 10

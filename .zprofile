@@ -2,14 +2,6 @@
 
 # profile file. Runs on login. Environmental variables are set here.
 
-# If you don't plan on reverting to bash, you can remove the link in ~/.profile
-# to clean up.
-
-# Adds `~/.local/bin` to $PATH
-export PATH="$PATH:${$(find ~/.local/bin -type d -printf %p:)%%:}"
-
-unsetopt PROMPT_SP
-
 # Default programs:
 export EDITOR="nvim"
 export TERMINAL="foot"
@@ -21,8 +13,6 @@ export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_CACHE_HOME="$HOME/.cache"
 export LESSHISTFILE="-"
-#export ALSA_CONFIG_PATH="$XDG_CONFIG_HOME/alsa/asoundrc"
-#export GNUPGHOME="${XDG_DATA_HOME:-$HOME/.local/share}/gnupg"
 export CARGO_HOME="${XDG_DATA_HOME:-$HOME/.local/share}/cargo"
 export GOPATH="${XDG_DATA_HOME:-$HOME/.local/share}/go"
 
@@ -36,31 +26,30 @@ export LESS_TERMCAP_se="$(printf '%b' '[0m')"
 export LESS_TERMCAP_us="$(printf '%b' '[1;32m')"
 export LESS_TERMCAP_ue="$(printf '%b' '[0m')"
 export LESSOPEN="| /usr/bin/highlight -O ansi %s 2>/dev/null"
-export QT_QPA_PLATFORMTHEME="gtk2"	# Have QT use gtk2 theme.
 
 # This is the list for lf icons:
 export LF_ICONS="di=📁:\
-fi=📃:\
+fi=📜:\
 tw=🤝:\
 ow=📂:\
-ln=⛓:\
+ln=⛓️ :\
 or=❌:\
 ex=🎯:\
-*.txt=✍:\
-*.mom=✍:\
-*.me=✍:\
-*.ms=✍:\
-*.png=🖼:\
-*.webp=🖼:\
-*.ico=🖼:\
+*.txt=📜:\
+*.mom=📜:\
+*.me=📜:\
+*.ms=📜:\
+*.png=🖼️ :\
+*.webp=🖼️ :\
+*.ico=🖼️ :\
 *.jpg=📸:\
 *.jpe=📸:\
 *.jpeg=📸:\
-*.gif=🖼:\
-*.svg=🗺:\
-*.tif=🖼:\
-*.tiff=🖼:\
-*.xcf=🖌:\
+*.gif=🖼️ :\
+*.svg=🖼️ :\
+*.tif=🖼️ :\
+*.tiff=🖼️ :\
+*.xcf=🖼️ :\
 *.html=🌎:\
 *.xml=📰:\
 *.gpg=🔒:\
@@ -83,16 +72,16 @@ ex=🎯:\
 *.m4a=🎵:\
 *.flac=🎼:\
 *.wav=🎼:\
-*.mkv=🎥:\
-*.mp4=🎥:\
-*.webm=🎥:\
-*.mpeg=🎥:\
-*.avi=🎥:\
-*.mov=🎥:\
-*.mpg=🎥:\
-*.wmv=🎥:\
-*.m4b=🎥:\
-*.flv=🎥:\
+*.mkv=🎦:\
+*.mp4=🎦:\
+*.webm=🎦:\
+*.mpeg=🎦:\
+*.avi=🎦:\
+*.mov=🎦:\
+*.mpg=🎦:\
+*.wmv=🎦:\
+*.m4b=🎦:\
+*.flv=🎦:\
 *.zip=📦:\
 *.rar=📦:\
 *.7z=📦:\
@@ -112,7 +101,13 @@ ex=🎯:\
 *.bib=🎓:\
 *.ged=👪:\
 *.part=💔:\
-*.torrent=🔽:\
-*.jar=♨:\
-*.java=♨:\
+*.torrent=📥:\
+*.ini=⚙️ :\
+*.exe=🪟:\
+*.java=☕:\
+*.jar=☕:\
+*.c=🇨 :\
+*.cpp=🇨 :\
+*.go=🇬 :\
+*.py=🐍:\
 "
