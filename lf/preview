@@ -5,6 +5,7 @@ image() {
 		printf '{"action": "add", "identifier": "PREVIEW", "x": "%s", "y": "%s", "width": "%s", "height": "%s", "scaler": "contain", "path": "%s"}\n' "$4" "$5" "$(($2-1))" "$(($3-1))" "$1" > "$FIFO_UEBERZUG"
 		exit 1
 	else
+    # echo -e "$2 width:$4 height:$3 $5"
     chafa -f sixels -w 9 "$1" -s "$(($4-5))"x"$(($3-5))" | sed 's/#/\n#/g'
     # img2sixel "$1" -h 400 | sed 's/#/\n#/g'
 	fi
@@ -45,7 +46,7 @@ case "$(printf "%s\n" "$(readlink -f "$1")" | awk '{print tolower($0)}')" in
 		image "${CACHE}.jpg" "$2" "$3" "$4" "$5"
 		;;
 	*.bmp|*.jpg|*.jpeg|*.png|*.xpm|*.webp|*.gif|*.jfif|*.ico)
-    image $1 $2 $3 $4 $5
+    image "$1" "$2" "$3" "$4" "$5"
 		;;
   *.svg)
     [ ! -f "${CACHE}.jpg" ] && \
