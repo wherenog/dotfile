@@ -6,7 +6,7 @@ image() {
 		exit 1
 	else
     # echo -e "$2 width:$4 height:$3 $5"
-    chafa -f sixels -w 9 "$1" -s "$(($4-5))"x"$(($3-5))" | sed 's/#/\n#/g'
+    chafa -f sixels -w 9 "$1" -s "$(($4-3))"x"$(($3-3))" | sed 's/#/\n#/g'
     # img2sixel "$1" -h 400 | sed 's/#/\n#/g'
 	fi
 }
