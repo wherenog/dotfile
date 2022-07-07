@@ -7,12 +7,12 @@ alias \
 
 fd ()
 {
-  cd $(du -a ~/ | awk '{print $2}' | fzf)
+  cd $(find ~/ -type d | fzf --reverse --height 50%)
 }
 
 fe ()
 {
-  nvim $(du -a ~/ | awk '{print $2}' | fzf --preview 'bat --style=numbers --color=always --line-range :500 {}')
+  nvim $(find ~/ -type f | fzf --reverse --height 50% --preview 'bat --style=numbers --color=always --line-range :500 {}')
 }
 
 n ()
