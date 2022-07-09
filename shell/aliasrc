@@ -5,14 +5,14 @@ alias \
   r="lf" \
   lz="lazygit" \
 
-fd ()
+df ()
 {
-  cd $(find ~/ -type d | fzf --reverse --height 50%)
+  cd $(find ~/ -type d | fzf --reverse --height 60%)
 }
 
 fe ()
 {
-  nvim $(find ~/ -type f | fzf --reverse --height 50% --preview 'bat --style=numbers --color=always --line-range :500 {}')
+  nvim $(find ~/ -type f | fzf --reverse --height 60% --preview 'bat --style=numbers --color=always --line-range :500 {}')
 }
 
 n ()
