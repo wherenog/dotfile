@@ -36,8 +36,10 @@
         }
     },
     "clock": {
-        "format": "{:%H}",
-        "tooltip-format": "{:%Y-%m-%d %H:%M}"
+        "format": "{:%H\n%M}",
+        /* "tooltip-format": "{:%Y-%m-%d %H:%M}" */
+        "tooltip-format": "{calendar}",
+        "today-format": "<span color='#00ff00'><b>{}</b></span>",
     },
     "custom/bluetooth": {
         "format": "{icon}",
