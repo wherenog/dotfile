@@ -7,12 +7,12 @@ alias \
 
 df ()
 {
-  cd $(find ~/ -type d | fzf --reverse --height 60%)
+  cd $(fd . '/home/hanzi/' --hidden --type d | fzf --reverse --height 60%)
 }
 
 fe ()
 {
-  nvim $(find ~/ -type f | fzf --reverse --height 60% --preview 'bat --style=numbers --color=always --line-range :500 {}')
+  nvim $(fd . '/home/hanzi/' --hidden --type f | fzf --reverse --height 60% --preview 'bat --style=numbers --color=always --line-range :500 {}')
 }
 
 n ()
