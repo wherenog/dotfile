@@ -2,7 +2,6 @@
     "height": 10,
     "name": "bottom",
     "layer": "top",
-    "output": "eDP-1",
     "margin": "0px 0px 0px 0px",
     "position": "left",
     "modules-right": ["custom/bluetooth", "pulseaudio", "clock", "backlight", "battery", "memory", "cpu", "disk", "temperature", "tray"],

@@ -24,3 +24,6 @@ cp -r ~/.config/shell .
 
 rm -r ./wayfire.ini
 cp -r ~/.config/wayfire.ini .
+
+rm -r ./mako
+cp -r ~/.config/mako/ .
