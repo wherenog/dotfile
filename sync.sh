@@ -27,3 +27,6 @@ cp -r ~/.config/wayfire.ini .
 
 rm -r ./mako
 cp -r ~/.config/mako/ .
+
+rm -r ./helix
+cp -r ~/.config/helix/ .

@@ -1,0 +1,7 @@
+theme="catpuccin"
+
+[editor.cursor-shape]
+insert="bar"
+
+[editor.whitespace]
+render="all"
